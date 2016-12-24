@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FrameWork.Logger;
 using FrameWork.Utilities;
+using TadbirPardaz.AM.Common;
 using TseTmc.Domain;
 using TseTmc.Domain.Enum;
 using TseTmc.Domain.TseTmcObject;
@@ -18,8 +19,8 @@ namespace TseTmcFacade
         private TsePublicV2SoapClient TseService = new TsePublicV2SoapClient();
         public CustomLogger Logger => new CustomLogger(GetType().FullName);
 
-        private const string UserName = "emofid.com";
-        private const string Password = "emofid";
+        private const string UserName = "";
+        private const string Password = "";
         public static TseTmcFacade Instance => (_instance ?? (_instance = new TseTmcFacade()));
      
         public List<Insrument> GetInsCode(Flow flow)
@@ -180,5 +181,4 @@ namespace TseTmcFacade
         }
 
     }
-}
 }

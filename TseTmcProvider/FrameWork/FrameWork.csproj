@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Logger\CustomLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\CustomUtilities.cs" />
     <Compile Include="Utilities\Extentions.cs" />
   </ItemGroup>
   <ItemGroup>
